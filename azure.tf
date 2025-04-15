@@ -1,4 +1,4 @@
-# Required Outputs (these are pulled from the current config after running "az login")
+# Required Outputs/Data blocks (these are pulled from the current config after running "az login")
 data "azurerm_client_config" "current" {
   # Retrieves the current Azure tenant and client settings
 }
@@ -20,7 +20,7 @@ output "tenant_id" {
 }
 
 resource  "azuread_application"  "app" {
-display_name  =  "NewRelic-Integrations-Terraform-2025"
+display_name  =  var.napp_registration_display_name
 owners           = [data.azuread_client_config.current.object_id]
 
   required_resource_access {

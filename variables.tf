@@ -12,18 +12,6 @@ variable "newrelic_region" {
   default     = "EU"
 }
 
-variable "azure_subscription_id" {
-  description = "The Azure subscription ID."
-}
-
-variable "azure_tenant_id" {
-  description = "The Azure tenant ID."
-}
-
-variable "azure_client_id" {
-  description = "The Azure client ID for authentication."
-}
-
-variable "azure_client_secret" {
-  description = "The Azure client secret for authentication."
+variable "napp_registration_display_name" {
+  description = "The display name for the app registration in Azure"
 }
