@@ -1,4 +1,4 @@
-// variables.tf
+
 variable "newrelic_account_id" {
   description = "The New Relic account ID."
 }
